@@ -1,0 +1,11 @@
+.venv/
+node_modules/
+dist/
+client/dist/
+.env
+.env.local
+client/.env
+server/.env
+npm-debug.log*
+*.log
+.vercel/
