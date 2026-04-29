@@ -1,8 +1,14 @@
 # JobTrack - Job Application Tracking Web App
 
-JobTrack is a deployed full-stack web application for managing job applications from registration through offer tracking. It provides authenticated user accounts, persistent application records, dashboard analytics, status management, and a responsive SaaS-style interface inspired by a professional job-search workflow.
+JobTrack is a deployed full-stack job application tracking system built with React, Supabase, and Vercel.
+
+It enables job seekers to securely manage applications with persistent updates, user-scoped access control, Supabase Row Level Security (RLS) policies, and a serverless deployment model.
+
+The project demonstrates end-to-end system design, including authentication, protected API routes, user-scoped database access, and cloud deployment using serverless functions.
 
 **Live Demo:** [https://job-application-tracking-web-app-cl.vercel.app/login](https://job-application-tracking-web-app-cl.vercel.app/login)
+
+**Tech Highlights:** Supabase (Auth + RLS), Serverless APIs, React + Vite, PostgreSQL, Vercel Deployment
 
 ## Screenshots
 
@@ -19,10 +25,26 @@ JobTrack is a deployed full-stack web application for managing job applications 
 This project was built to demonstrate a complete full-stack application with practical job-search tracking features:
 
 - Developed a full-stack web application for managing job applications with CRUD operations and persistent storage.
-- Designed and implemented REST APIs using Node.js and Express for application tracking and status management.
+- Implemented a hybrid backend architecture using Supabase (Auth, PostgreSQL, RLS) and serverless Express APIs on Vercel, enabling secure user-scoped data access without managing traditional infrastructure.
 - Built responsive user interfaces with React for efficient data display and user interaction.
 - Designed a relational database schema using Supabase PostgreSQL to support scalable user-owned data storage and querying.
 - Deployed the production app with Vercel and connected it to Supabase Auth and PostgreSQL.
+
+## Why This Project Matters
+
+This project demonstrates real-world full-stack engineering beyond simple CRUD applications:
+
+- User-scoped data access using API-level ownership checks and Supabase Row Level Security (RLS) policies
+- Serverless backend architecture deployed on Vercel
+- Authentication-integrated API design with user-scoped queries
+- Production deployment with environment configuration and cloud integration
+
+## Key Engineering Highlights
+
+- Designed a full-stack SaaS-style application with user-scoped access control using API-level ownership checks and Supabase Row Level Security (RLS) policies
+- Built a serverless backend architecture using Vercel Functions and Express, eliminating the need for traditional infrastructure
+- Implemented authentication-integrated APIs with user-scoped access control
+- Deployed a full-stack application with environment configuration, cloud database integration, and a GitHub-based deployment workflow
 
 ## Core Features
 
@@ -42,7 +64,7 @@ This project was built to demonstrate a complete full-stack application with pra
 | --- | --- |
 | Frontend | React, Vite, React Router |
 | UI | CSS, Lucide React icons, Recharts |
-| Backend | Node.js, Express |
+| Backend | Supabase (Auth, PostgreSQL, RLS) + Serverless Express (Vercel Functions) |
 | Auth | Supabase Auth |
 | Database | Supabase PostgreSQL |
 | Validation | Zod |
